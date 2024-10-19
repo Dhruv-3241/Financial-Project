@@ -17,7 +17,17 @@
 
 ## Project Structure
 
+```
 paytrack/
+│
+├── backend/
+│   ├── config/
+│   │   └── db.js  (MongoDB connection)
+│   ├── models/
+│   │   └── paymentModel.js  (Payment schema)
+│   ├── routes/
+│   │   └── paymentRoutes.js (API routes)
+│   ├── server.js (Express server)
 │
 ├── paytrack/
 │   ├── src/
@@ -29,7 +39,7 @@ paytrack/
 │   │   └── styles.css (CSS for the UI)
 │
 ├── package.json (dependencies)
+├── .env (for environment variables)
 └── README.md
-
 
 
