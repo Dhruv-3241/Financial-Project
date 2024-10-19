@@ -12,7 +12,7 @@ const Navbar = ({ isAuthenticated, onLogout }) => {
 
   useEffect(() => {
     if (isAuthenticated) {
-      let userData = localStorage.getItem('data');
+      let userData = localStorage.getItem('userData');
       userData = JSON.parse(userData);
       setUser(userData);
     }

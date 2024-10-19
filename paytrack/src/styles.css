@@ -126,7 +126,6 @@ h1 {
 
 ::-webkit-scrollbar-thumb {
   background: #141e28;
-  border-radius: 4px; /* Slightly increased border radius for thumb */
 }
 
 ::-webkit-scrollbar-thumb:hover {
