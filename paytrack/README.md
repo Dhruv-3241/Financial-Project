@@ -18,16 +18,17 @@
 ## Project Structure
 
 paytrack/
-├── src/
-│   ├── components/
-│   │   └── PaymentForm.js (Payment form component)
-│   │   └── PaymentList.js (List of categorized payments)
-│   ├── App.js (Main App component)
-│   ├── index.js (React entry point)
-│   └── styles.css (CSS for the UI)
+│
+├── paytrack/
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── PaymentForm.js (Payment form component)
+│   │   │   └── PaymentList.js (List of categorized payments)
+│   │   ├── App.js (Main App component)
+│   │   ├── index.js (React entry point)
+│   │   └── styles.css (CSS for the UI)
 │
 ├── package.json (dependencies)
-├── .env (for environment variables)
 └── README.md
 
 
