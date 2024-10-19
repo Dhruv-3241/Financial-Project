@@ -14,7 +14,11 @@ dotenv.config();
 app.use(express.json());
 
 // Enable CORS for all routes
-app.use(cors());
+app.use(cors({
+  origin: 'https://financial-project-tau.vercel.app', // Specify your frontend URL
+  methods: ['GET', 'POST', 'PUT', 'DELETE'], // Allowed methods
+  credentials: true, // Allow credentials if needed
+}));
 
 // MongoDB connection
 mongoose.connect(process.env.MONGO_URI, {
