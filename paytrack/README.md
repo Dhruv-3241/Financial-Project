@@ -20,6 +20,7 @@
 ## Project Structure
 
 ```
+Financial Project/
 ├── paytrack/
 │   ├── src/
 │   │   ├── components/
@@ -47,5 +48,24 @@
 │   │   └── styles.css (CSS for the UI)
 │   ├── package.json (dependencies)
 │   └── README.md
+```
+
+## Installation
+
+1. Navigate to the `paytrack` directory:
+
+   ```bash
+   cd paytrack
+
+2. Install dependencies
+    ```bash
+    npm install
+
+3. Start the website:
+
+        ```bash
+        npm run start
+        
+The backend will be running on Vercel.
 
 
