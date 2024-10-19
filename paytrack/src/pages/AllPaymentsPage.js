@@ -14,7 +14,7 @@ const AllPaymentsPage = () => {
   const fetchPayments = async () => {
     setLoading(true);
     try {
-      const response = await fetch('https://financial-project.onrender.com/payment');
+      const response = await fetch('https://financial-project.onrender.com/api/payment');
       if (!response.ok) {
         throw new Error(`Error fetching payments: ${response.statusText}`);
       }

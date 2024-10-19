@@ -21,7 +21,7 @@ const SignupPage = ({ onAuthentication }) => {
       return;
     }
     try {
-      const response = await axios.post('https://financial-project.onrender.com/user/signup', { originalname, username, email, password });
+      const response = await axios.post('https://financial-project.onrender.com/api/user/signup', { originalname, username, email, password });
       toast.success('Account created successfully!');
       
       // Store the token (if your backend sends one)

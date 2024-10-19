@@ -1,6 +1,6 @@
 import { authHeader } from '../utils/auth';
 
-const API_URL = 'https://financial-project.onrender.com';
+const API_URL = 'https://financial-project.onrender.com/api';
 
 // Authentication APIs
 export const loginUser = async (credentials) => {
