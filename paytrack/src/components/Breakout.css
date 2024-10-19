@@ -1,0 +1,82 @@
+/* Breakout.css */
+
+.cards-container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 20px;
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 1rem;
+}
+
+.card-wrapper {
+  width: 105%;
+}
+
+.stats-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1rem;
+  margin-bottom: 1.5rem;
+}
+
+.stat-item {
+  text-align: center;
+}
+
+.stat-value {
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.chart-container {
+  height: 25rem;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.categories-container {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+  width: 100%;
+}
+
+.category-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+}
+
+.category-stats {
+  font-size: 0.875rem;
+  color: #6B7280;
+  margin-bottom: 0.5rem;
+}
+
+.payment-item {
+  display: flex;
+  justify-content: space-between;
+  font-size: 0.875rem;
+  padding: 0.25rem 0.50rem;
+  border-radius: 8px;
+}
+
+.payment-description {
+  color: #374151;
+}
+
+@media (max-width: 768px) {
+  .stats-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 480px) {
+  .stats-grid {
+    grid-template-columns: 1fr;
+  }
+}

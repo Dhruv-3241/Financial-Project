@@ -1,0 +1,148 @@
+.login-container {
+  width: 100%;
+  height: calc(100vh - 60px);
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  background-color: transparent !important;
+}
+
+.login-form {
+  padding: 2rem;
+  border-radius: 8px;
+  /* box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); */
+  width: 100%;
+  max-width: 400px;
+  height: 250px;
+  align-items: center;
+  margin-top: -100px;
+}
+
+h2 {
+  text-align: center;
+  color: white !important;
+  margin-bottom: 1.5rem;
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+}
+
+input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #6b7bc1 !important;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #9b93f3 !important;
+}
+
+#subtext {
+  text-align: center;
+  margin-top: 1.5rem;
+  color: white !important;
+  font-size: 1.2rem !important;
+}
+
+#subtext a {
+  color: white !important;
+  text-decoration: none;
+  cursor: pointer;
+  transition: transform 0.3s ease-in-out;
+}
+
+#subtext a:hover {
+  color: #9b93f3 !important;
+}
+
+.login-image {
+  background-color: transparent !important;
+}
+
+img {
+  width: 100%;
+  height: 100%;
+}
+
+.captcha-container {
+  display: flex;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.captcha-text {
+  font-size: 1.5rem;
+  font-weight: bold;
+  background-color: #e0e0e0;
+  padding: 0.5rem 1rem;
+  border-radius: 4px;
+  letter-spacing: 2px;
+  margin-right: 0.5rem;
+}
+
+.refresh-captcha {
+  background-color: transparent;
+  border: none;
+  font-size: 1.5rem;
+  cursor: pointer;
+  transition: transform 0.2s;
+}
+
+.refresh-captcha:hover {
+  transform: rotate(180deg);
+}
+
+input {
+  margin-bottom: 1rem;
+  padding: 0.5rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+
+.loginbtn {
+  background-color: #6b7bc1 !important;
+  color: white;
+  padding: 0.5rem;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.loginbtn:hover {
+  background-color: #9b93f3 !important;
+}
+
+
+@media (min-width: 768px) {
+  .login-container {
+    justify-content: space-between;
+    padding: 0 2rem;
+  }
+
+  /* .login-image {
+    display: block;
+    width: 10%;
+    max-width: 500px;
+    height: 400px;
+    border-radius: 8px;
+  } */
+}

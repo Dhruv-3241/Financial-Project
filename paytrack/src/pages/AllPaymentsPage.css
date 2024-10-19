@@ -1,0 +1,125 @@
+/* AllPaymentsPage.css */
+
+.all-payments-page {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  max-width: 2000px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.all-payments-page h1 {
+  font-size: 2.5rem;
+  color: white;
+  margin-bottom: 40px;
+  text-align: center;
+}
+
+.payment-grid {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(250px, 1fr));
+  gap: 40px;
+  width: 100%;
+}
+
+.payment-card {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.payment-card:hover {
+  transform: scale(1.05);
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+}
+
+.payment-card h3 {
+  font-size: 1.2rem;
+  margin: 0 0 10px 0;
+  color: #333;
+  text-align: center;
+}
+
+.payment-card .amount {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: #2c3e50;
+  margin-bottom: 5px;
+}
+
+.payment-card .category {
+  font-size: 0.9rem;
+  color: #7f8c8d;
+  text-transform: uppercase;
+}
+
+/* Category Colors */
+.payment-card.personal { border-top: 12px solid #ff6b6b; }
+.payment-card.education { border-top: 12px solid #4ecdc4; }
+.payment-card.lifestyle { border-top: 12px solid #45b7d1; }
+.payment-card.miscellaneous { border-top: 12px solid #f7b731; }
+
+/* Legend Styling */
+.legend {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+  padding: 10px;
+  width: 200px;
+}
+
+.legend-table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.legend-table th {
+  text-align: left;
+  padding: 8px;
+  font-weight: bold;
+}
+
+.legend-table td {
+  text-align: center;
+  padding: 8px;
+}
+
+.legend-table .Category{
+  padding-left: 12px;
+  text-align: left;
+}
+
+
+.color-box {
+  display: inline-block;
+  width: 16px;
+  height: 16px;
+  border-radius: 4px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+  .payment-grid {
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  }
+}
+
+@media (max-width: 480px) {
+  .payment-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .all-payments-page h1 {
+    font-size: 2rem;
+  }
+}

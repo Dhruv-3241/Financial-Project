@@ -1,0 +1,24 @@
+/* Footer.css */
+.footer {
+    flex-shrink: 0;
+    text-align: center;
+    background-color: #f8f8f8;
+    border-top: 1px solid #e7e7e7;
+    padding: 20px 0;
+    margin-top: 40px;
+  }
+  
+  .footer-content {
+    color: #666;
+    font-size: 14px;
+  }
+  
+  .footer-link {
+    color: #713200;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  
+  .footer-link:hover {
+    text-decoration: underline;
+  }

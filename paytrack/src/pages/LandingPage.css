@@ -1,0 +1,137 @@
+/* LandingPage.css */
+
+/* Container Styling */
+.landing-page {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+  text-align: center;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+}
+
+/* Title Styling */
+.landing-page h1 {
+  font-size: 3rem;
+  color: #ffffff;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); /* Subtle shadow for clarity */
+}
+
+/* Paragraph Styling */
+.landing-page p {
+  font-size: 1.2rem;
+  color: #e0e0e0;
+  margin-bottom: 15px;
+  line-height: 1.6;
+}
+
+.landing-page p:last-of-type {
+  margin-bottom: 30px;
+}
+
+/* Lottie Animation Container */
+.lottie-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 400px;
+  width: 100%;
+  margin-bottom: 20px;
+}
+
+/* Form Styling */
+.landing-page form {
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+  width: 100%;
+  max-width: 600px;
+  background-color: #f8f9faef;
+  border-radius: 8px;
+  padding: 30px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  margin: 20px 0;
+}
+
+/* Input and Select Styling */
+.landing-page form input,
+.landing-page form select {
+  width: 100%;
+  padding: 12px;
+  margin-bottom: 20px;
+  border: 1px solid #bdc3c7;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+  transition: border-color 0.3s ease;
+}
+
+.landing-page form input:focus,
+.landing-page form select:focus {
+  border-color: #3498db;
+  outline: none;
+}
+
+/* Label Styling */
+.landing-page form label {
+  display: block;
+  text-align: left;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #2c3e50;
+}
+
+/* Button Styling */
+.landing-page form button {
+  background-color: #3498db;
+  color: white;
+  border: none;
+  padding: 12px 24px;
+  font-size: 1.1rem;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  width: 100%;
+}
+
+.landing-page form button:hover {
+  background-color: #2980b9;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .landing-page h1 {
+    font-size: 2.5rem;
+  }
+
+  .landing-page p {
+    font-size: 1rem;
+  }
+
+  .landing-page form {
+    padding: 20px;
+  }
+}
+
+@media (max-width: 480px) {
+  .landing-page h1 {
+    font-size: 2rem;
+  }
+
+  .lottie-container {
+    height: 300px;
+  }
+
+  .landing-page form input,
+  .landing-page form select {
+    padding: 10px;
+  }
+
+  .landing-page form button {
+    padding: 10px;
+    font-size: 1rem;
+  }
+}
