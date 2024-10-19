@@ -10,7 +10,7 @@ const LandingPage = () => {
 
   const handleAddPayment = async (payment) => {
     try {
-      const response = await fetch('https://financial-project.onrender.com/api/payment', {
+      const response = await fetch('https://financial-project.onrender.com/payment', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
         body: JSON.stringify(payment),

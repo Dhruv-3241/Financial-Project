@@ -47,7 +47,7 @@ const LoginPage = ({ onAuthentication }) => {
     }
 
     try {
-      const response = await axios.post('https://financial-project.onrender.com/api/user/login', { email, password });
+      const response = await axios.post('https://financial-project.onrender.com/user/login', { email, password });
       
       // Store the token in localStorage using the new auth utility
       setAuthToken(response.data.token);

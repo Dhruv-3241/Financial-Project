@@ -4,7 +4,7 @@ import toast from 'react-hot-toast';
 
 // Create axios instance with base URL
 const axiosInstance = axios.create({
-  baseURL: 'https://financial-project.onrender.com/api'
+  baseURL: 'https://financial-project.onrender.com'
 });
 
 // Request interceptor

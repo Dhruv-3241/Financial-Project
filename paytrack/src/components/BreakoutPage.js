@@ -20,7 +20,7 @@ const SpendingBreakdown = () => {
   useEffect(() => {
     const fetchBreakdownData = async () => {
       try {
-        const response = await fetch('https://financial-project.onrender.com/api/payment/breakout');
+        const response = await fetch('https://financial-project.onrender.com/payment/breakout');
         if (!response.ok) throw new Error('Failed to fetch data');
         const data = await response.json();
         setBreakdownData(data);
