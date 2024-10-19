@@ -14,32 +14,38 @@
 
 - **ReactJS** - UI framework for building user interfaces.
 - **CSS** - For styling the components.
+- **Lottie Animation** - For making the website interactive.
+- **Axios** - For fetching data
 
 ## Project Structure
 
 ```
-paytrack/
-│
-├── backend/
-│   ├── config/
-│   │   └── db.js  (MongoDB connection)
-│   ├── models/
-│   │   └── paymentModel.js  (Payment schema)
-│   ├── routes/
-│   │   └── paymentRoutes.js (API routes)
-│   ├── server.js (Express server)
-│
 ├── paytrack/
 │   ├── src/
 │   │   ├── components/
-│   │   │   └── PaymentForm.js (Payment form component)
-│   │   │   └── PaymentList.js (List of categorized payments)
+│   │   │   └── UI/
+│   │   │   │   └── card.js (Card component)
+│   │   │   └── BreakoutPage.js (Breakout Page Component)
+│   │   │   └── Footer.js (Footer Component)
+│   │   │   └── Layout.js (Layout Component)
+│   │   │   └── LoginPage.js (LoginPage Component)
+│   │   │   └── Navbar.js (Navbar Component)
+│   │   │   └── ProtectedRoute.js (Routes Component)
+│   │   │   └── Signup.js (SignUp Page Component)
+│   │   ├── pages/
+│   │   │   └── AllPaymentsPage.js (All Payments Page Component)
+│   │   │   └── LandingPage.js (Landing Page Component)
+│   │   │   └── PaymentForm.js (Payment Form Component)
+│   │   ├── services/
+│   │   │   └── API.js (API Component)
+│   │   ├── utils/
+│   │   │   └── auth.js (Auth Component)
+│   │   │   └── axios-config.js (Axios Component)
+│   │   ├── assets 
 │   │   ├── App.js (Main App component)
 │   │   ├── index.js (React entry point)
 │   │   └── styles.css (CSS for the UI)
-│
-├── package.json (dependencies)
-├── .env (for environment variables)
-└── README.md
+│   ├── package.json (dependencies)
+│   └── README.md
 
 
