@@ -18,20 +18,26 @@ The backend for **PayTrack** is built with Node.js, Express.js, and MongoDB. It 
 
 - **Node.js** - JavaScript runtime for the backend.
 - **Express.js** - Framework for building web applications and APIs.
-- **MongoDB** - NoSQL database to store payment data.
+- **MongoDB** - NoSQL database to store user and payment data.
+- **Mongoose** - For Data modelling.
 
 ## Project Structure
 
-paytrack/
-│
+Financial Project/
 ├── backend/
 │   ├── config/
 │   │   └── db.js  (MongoDB connection)
+│   ├── middleware/
+│   │   └── authMiddleware.js  (Middleware)
 │   ├── models/
 │   │   └── paymentModel.js  (Payment schema)
+│   │   └── User.js  (User schema)
+│   │   └── UserVerification.js  (User Verification schema)
 │   ├── routes/
-│   │   └── paymentRoutes.js (API routes)
+│   │   └── paymentRoutes.js (Payment API routes)
+│   │   └── User.js (User API routes)
 │   ├── server.js (Express server)
+│   └── README.md
 
 ## Installation
 
@@ -44,16 +50,9 @@ paytrack/
     ```bash
     npm install
 
-3. Set up your MongoDB connection:
-    Create a .env file in the root of the backend folder with the following:
-
-        ```bash
-            MONGO_URI=mongodb://localhost:27017/paytrack
-        Replace the MongoDB URI if needed.
-
-4. Start the server:
+3. Start the server:
 
         ```bash
         node server.js
         
-The backend will be running on http://localhost:5000.
+The backend will be running on Render.

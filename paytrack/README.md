@@ -14,21 +14,58 @@
 
 - **ReactJS** - UI framework for building user interfaces.
 - **CSS** - For styling the components.
+- **Lottie Animation** - For making the website interactive.
+- **Axios** - For fetching data
 
 ## Project Structure
 
-paytrack/
-├── src/
-│   ├── components/
-│   │   └── PaymentForm.js (Payment form component)
-│   │   └── PaymentList.js (List of categorized payments)
-│   ├── App.js (Main App component)
-│   ├── index.js (React entry point)
-│   └── styles.css (CSS for the UI)
-│
-├── package.json (dependencies)
-├── .env (for environment variables)
-└── README.md
+```
+Financial Project/
+├── paytrack/
+│   ├── src/
+│   │   ├── components/
+│   │   │   └── UI/
+│   │   │   │   └── card.js (Card component)
+│   │   │   └── BreakoutPage.js (Breakout Page Component)
+│   │   │   └── Footer.js (Footer Component)
+│   │   │   └── Layout.js (Layout Component)
+│   │   │   └── LoginPage.js (LoginPage Component)
+│   │   │   └── Navbar.js (Navbar Component)
+│   │   │   └── ProtectedRoute.js (Routes Component)
+│   │   │   └── Signup.js (SignUp Page Component)
+│   │   ├── pages/
+│   │   │   └── AllPaymentsPage.js (All Payments Page Component)
+│   │   │   └── LandingPage.js (Landing Page Component)
+│   │   │   └── PaymentForm.js (Payment Form Component)
+│   │   ├── services/
+│   │   │   └── API.js (API Component)
+│   │   ├── utils/
+│   │   │   └── auth.js (Auth Component)
+│   │   │   └── axios-config.js (Axios Component)
+│   │   ├── assets 
+│   │   ├── App.js (Main App component)
+│   │   ├── index.js (React entry point)
+│   │   └── styles.css (CSS for the UI)
+│   ├── package.json (dependencies)
+│   └── README.md
+```
 
+## Installation
+
+1. Navigate to the `paytrack` directory:
+
+   ```bash
+   cd paytrack
+
+2. Install dependencies
+    ```bash
+    npm install
+
+3. Start the website:
+
+        ```bash
+        npm run start
+        
+The backend will be running on Vercel.
 
 
