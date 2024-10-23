@@ -4,7 +4,7 @@ export const setAuthToken = (token) => {
   };
   
   // Get token from localStorage
-  export const getAuthToken = () => {
+export const getAuthToken = () => {
     return localStorage.getItem('token');
   };
   
@@ -20,7 +20,7 @@ export const setAuthToken = (token) => {
   };
   
   // Create headers with auth token
-  export const authHeader = () => {
+export const authHeader = () => {
     const token = getAuthToken();
     return {
       'Content-Type': 'application/json',

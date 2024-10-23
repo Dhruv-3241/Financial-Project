@@ -90,7 +90,8 @@ router.post('/login', async (req, res) => {
                     originalname: data[0].originalname,
                     username: data[0].username,
                     email: data[0].email,
-                  }
+                  },
+                  token: jwt.sign({ email: data[0].email, userId: data[0]._id }, process.env.JWT_SECRET),
                 });
               }
               else {

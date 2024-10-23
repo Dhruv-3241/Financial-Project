@@ -39,6 +39,31 @@ const SignupPage = ({ onAuthentication }) => {
     }
   };
 
+  // const handleSignup = async (e) => {
+  //   e.preventDefault();
+  //   if (password !== confirmPassword) {
+  //     toast.error('Passwords do not match');
+  //     return;
+  //   }
+  //   try {
+  //     const response = await axios.post('http://localhost:5000/api/user/signup', { originalname, username, email, password });
+  //     toast.success('Account created successfully!');
+      
+  //     // Store the token (if your backend sends one)
+  //     if (response.data.token) {
+  //       localStorage.setItem('token', response.data.token);
+  //     }
+      
+  //     // Call the onAuthentication function passed from the parent
+  //     onAuthentication();
+      
+  //     // Navigate to the landing page
+  //     navigate('/');
+  //   } catch (error) {
+  //     toast.error(error.response?.data?.message || 'Signup failed. Please try again.');
+  //   }
+  // };
+
   // Lottie animation options
   const defaultOptions = {
     loop: true,

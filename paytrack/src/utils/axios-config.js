@@ -7,6 +7,10 @@ const axiosInstance = axios.create({
   baseURL: 'https://financial-project.onrender.com/api'
 });
 
+// const axiosInstance = axios.create({
+//   baseURL: 'http://localhost:5000/api'
+// });
+
 // Request interceptor
 axiosInstance.interceptors.request.use(
   (config) => {

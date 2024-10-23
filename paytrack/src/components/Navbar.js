@@ -25,7 +25,7 @@ const Navbar = ({ isAuthenticated, onLogout }) => {
   const handleLogout = () => {
     onLogout();
     localStorage.removeItem('token');
-    localStorage.removeItem('userEmail');
+    localStorage.removeItem('userData');
     navigate('/login');
   };
 

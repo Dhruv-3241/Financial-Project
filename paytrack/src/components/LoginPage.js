@@ -54,7 +54,7 @@ const LoginPage = ({ onAuthentication }) => {
       
       // Store user data
       localStorage.setItem('userData', JSON.stringify(response.data.data));
-      
+      localStorage.setItem('token', response.data.token);
       // Configure axios defaults for future requests
       axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`;
       
@@ -67,6 +67,37 @@ const LoginPage = ({ onAuthentication }) => {
       generateCaptcha(); // Generate new CAPTCHA on failure
     }
   };
+
+
+  // const handleLogin = async (e) => {
+  //   e.preventDefault();
+  //   if (captchaInput !== captcha) {
+  //     toast.error('CAPTCHA does not match. Please try again.');
+  //     generateCaptcha();
+  //     return;
+  //   }
+
+  //   try {
+  //     const response = await axios.post('http://localhost:5000/api/user/login', { email, password });
+      
+  //     // Store the token in localStorage using the new auth utility
+  //     setAuthToken(response.data.token);
+      
+  //     // Store user data
+  //     localStorage.setItem('userData', JSON.stringify(response.data.data));
+  //     localStorage.setItem('token', response.data.token);
+  //     // Configure axios defaults for future requests
+  //     axios.defaults.headers.common['Authorization'] = `Bearer ${response.data.token}`;
+      
+  //     toast.success('Login successful!');
+  //     onAuthentication(); // Update authentication state
+  //     navigate('/'); // Navigate to the landing page
+  //   } catch (error) {
+  //     console.error('Login error:', error);
+  //     toast.error(error.response?.data?.message || 'Login failed. Please try again.');
+  //     generateCaptcha(); // Generate new CAPTCHA on failure
+  //   }
+  // };
 
   return (
     <div className="login-container">
