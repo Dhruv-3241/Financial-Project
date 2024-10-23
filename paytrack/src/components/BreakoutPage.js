@@ -227,8 +227,8 @@ const SpendingBreakdown = () => {
             d="M20 12H4" 
           />
         </svg>
-        <p className="text-lg font-semibold text-gray-600">No spending data available</p>
-        <p className="text-gray-500 mt-2">Start adding your expenses to see your spending breakdown</p>
+        <p className="EmptyBreakout">No spending data available</p>
+        <p className="EmptyBreakoutData">Start adding your expenses to see your spending breakdown</p>
       </div>
     );
   }

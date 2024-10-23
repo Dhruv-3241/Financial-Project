@@ -53,7 +53,7 @@
 
 .category-stats {
   font-size: 0.875rem;
-  color: #6B7280;
+  color: #6b7280;
   margin-bottom: 0.5rem;
 }
 
@@ -61,12 +61,26 @@
   display: flex;
   justify-content: space-between;
   font-size: 0.875rem;
-  padding: 0.25rem 0.50rem;
+  padding: 0.25rem 0.5rem;
   border-radius: 8px;
 }
 
 .payment-description {
   color: #374151;
+}
+
+.EmptyBreakout {
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 16px;
+}
+
+.EmptyBreakoutData{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 16px;
 }
 
 @media (max-width: 768px) {
