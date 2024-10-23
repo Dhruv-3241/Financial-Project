@@ -194,16 +194,17 @@ const SpendingBreakdown = () => {
 
   if (loading) return (
     <div className="loading text-center p-4">
-      <p className="text-lg font-semibold">Loading your spending breakdown...</p>
+      <p className="LoadingBreakout">Loading your spending breakdown...</p>
     </div>
   );
 
   if (error) return (
-    <div className="error-message p-4 text-center">
-      <p className="text-red-600 font-semibold">Error: {error}</p>
+    <div className="error-message p-4 text-center align-center">
+      <p className="ErrorBreakout">Error: {error}</p>
       <button 
         onClick={() => window.location.reload()}
-        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-600"
+        className="mt-4 px-4 py-2 bg-blue-500 text-white rounded hover:bg-blue-500"
+        align="center"
       >
         Try Again
       </button>

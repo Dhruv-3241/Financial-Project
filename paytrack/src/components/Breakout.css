@@ -69,6 +69,20 @@
   color: #374151;
 }
 
+.ErrorBreakout{
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 16px;
+}
+
+.LoadingBreakout{
+  color: white;
+  font-size: 2rem;
+  text-align: center;
+  margin: 16px;
+}
+
 .EmptyBreakout {
   color: white;
   font-size: 2rem;
