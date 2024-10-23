@@ -107,6 +107,19 @@
   border-radius: 4px;
 }
 
+.Loader{
+  color: White;
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.EmptyPage{
+  color: white;
+  font-size: 1.5rem;
+  text-align: center;
+  margin: 16px;
+}
+
 /* Responsive adjustments */
 @media (max-width: 768px) {
   .payment-grid {

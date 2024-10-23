@@ -134,8 +134,8 @@ const AllPaymentsPage = () => {
     }
   };
 
-  if (loading) return <p>Loading payments...</p>;
-  if (!payments.length) return <p>No payments found</p>;
+  if (loading) return <p className='Loader'>Loading payments...</p>;
+  if (!payments.length) return <p className='EmptyPage'>No payments found</p>;
 
   const categories = [
     { name: 'Personal', color: '#ff6b6b' },
